@@ -6,12 +6,22 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim'
-  use "EdenEast/nightfox.nvim"
-  use 'morhetz/gruvbox'
+  -- Lualine
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  -- Telescope
+  use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+  requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  -- Git highlighting
+  use 'airblade/vim-gitgutter'
+
+  use "EdenEast/nightfox.nvim"
+  use 'morhetz/gruvbox'
+
   use 'hashivim/vim-terraform'
 end)
