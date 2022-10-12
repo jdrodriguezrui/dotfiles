@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Disable shell level mark
+LP_ENABLE_SHLVL=0
+#Kubernetes context for AWS EKS
+LP_ENABLE_KUBECONTEXT=0
+LP_DELIMITER_KUBECONTEXT_PREFIX="/"
+# AWS Profile
+# Reduce Liquidprompt response time
+LP_ENABLE_JOBS=0
+LP_ENABLE_BATT=0
+LP_ENABLE_TEMP=0
+LP_ENABLE_LOAD=0
