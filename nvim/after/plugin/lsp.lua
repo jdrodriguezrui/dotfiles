@@ -38,12 +38,28 @@ local lsp_flags = {
 }
 
 require('nvim-lsp-installer').setup {}
-require('lspconfig')['bashls'].setup{
+
+require('lspconfig').bashls.setup{
+   on_attach = on_attach,
+   flags = lsp_flags
+}
+
+require('lspconfig')['sumneko_lua'].setup{
+   on_attach = on_attach,
+   flags = lsp_flags
+}
+
+require('lspconfig')['yamlls'].setup{
    on_attach = on_attach,
    flags = lsp_flags,
 }
 
-require('lspconfig')['sumneko_lua'].setup{
+require('lspconfig')['groovyls'].setup{
+   on_attach = on_attach,
+   flags = lsp_flags,
+}
+
+require('lspconfig')['terraformls'].setup{
    on_attach = on_attach,
    flags = lsp_flags,
 }

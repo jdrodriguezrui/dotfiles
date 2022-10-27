@@ -1,7 +1,7 @@
 -- Jenkinsfile type
 vim.filetype.add({
-	  pattern = {
-	    ["*Jenkinsfile"] = "groovy"
-	  }
-	})
+   pattern = {
+      ["*Jenkinsfile"] = "groovy"
+   }
+})
 
