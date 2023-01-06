@@ -6,6 +6,7 @@ LP_USER_ALWAYS=0
 #Kubernetes context for AWS EKS
 LP_ENABLE_KUBECONTEXT=1
 LP_DELIMITER_KUBECONTEXT_PREFIX="/"
+LP_ENABLE_KUBE_NAMESPACE=1
 # AWS Profile
 # Reduce Liquidprompt response time
 LP_ENABLE_JOBS=0

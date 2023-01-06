@@ -12,3 +12,4 @@ vim.opt.shiftwidth = 3
 vim.opt.mouse = "a"
 vim.opt.wrap = false
 
+vim.g.do_filetype_lua = 1

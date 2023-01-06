@@ -1,7 +1,14 @@
 -- Jenkinsfile type
 vim.filetype.add({
    pattern = {
-      ["*Jenkinsfile"] = "groovy"
+      [".*Jenkinsfile"] = "groovy"
+   }
+})
+
+-- Dockerfile type
+vim.filetype.add({
+   pattern = {
+      [".*Dockerfile"] = "dockerfile"
    }
 })
 
