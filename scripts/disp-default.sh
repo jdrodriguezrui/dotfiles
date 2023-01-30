@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 INTEGRATED_DISP=$(xrandr | grep eDP | awk '{print $1}')
 HDMI_DISP=$(xrandr | grep HDMI | awk '{print $1}')
