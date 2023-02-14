@@ -7,7 +7,7 @@
 return require('packer').startup(function(use)
    -- Packer can manage itself
    use 'wbthomason/packer.nvim'
-   -- Still don't know what Tresitter is
+   -- Tresitter
    use {
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate'
@@ -27,7 +27,10 @@ return require('packer').startup(function(use)
    }
    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
    -- Git highlighting
-   use 'airblade/vim-gitgutter'
+   use 'lewis6991/gitsigns.nvim'
+
+   -- Scrollbar
+   use("petertriho/nvim-scrollbar")
 
    use "EdenEast/nightfox.nvim"
    use 'morhetz/gruvbox'
