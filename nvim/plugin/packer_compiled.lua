@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -89,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  ["nvim-hlslens"] = {
+    loaded = true,
+    path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
+    url = "https://github.com/kevinhwang91/nvim-hlslens"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -98,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-scrollbar"] = {
+    loaded = true,
+    path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
+    url = "https://github.com/petertriho/nvim-scrollbar"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -129,11 +144,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-gitgutter"] = {
-    loaded = true,
-    path = "/home/velo-julianr/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
-    url = "https://github.com/airblade/vim-gitgutter"
   },
   ["vim-terraform"] = {
     loaded = true,
