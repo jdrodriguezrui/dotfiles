@@ -1,2 +1,2 @@
-vim.cmd("colorscheme carbonfox")
---vim.cmd("colorscheme gruvbox")
+--vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme gruvbox")
