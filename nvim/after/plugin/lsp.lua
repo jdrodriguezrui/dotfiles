@@ -32,6 +32,20 @@ local on_attach = function(client, bufnr)
   nnoremap('<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
+require'cmp'.setup {
+  sources = {
+    { name = 'nvim_lsp' }
+  }
+}
+
+local lsp_defaults = require('lspconfig').util.default_config
+
+lsp_defaults.capabilities = vim.tbl_deep_extend(
+  'force',
+  lsp_defaults.capabilities,
+  require('cmp_nvim_lsp').default_capabilities()
+)
+
 local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
@@ -59,3 +73,7 @@ require('lspconfig')['terraformls'].setup{
    flags = lsp_flags,
 }
 
+require('lspconfig')['pyright'].setup{
+   on_attach = on_attach,
+   flags = lsp_flags,
+}
