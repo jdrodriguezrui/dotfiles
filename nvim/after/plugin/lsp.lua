@@ -32,12 +32,6 @@ local on_attach = function(client, bufnr)
   nnoremap('<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
-require'cmp'.setup {
-  sources = {
-    { name = 'nvim_lsp' }
-  }
-}
-
 local lsp_defaults = require('lspconfig').util.default_config
 
 lsp_defaults.capabilities = vim.tbl_deep_extend(
