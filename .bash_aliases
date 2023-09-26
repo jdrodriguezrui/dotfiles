@@ -13,6 +13,7 @@ export KUBE_EDITOR="nvim"
 #source <(kubectl completion bash)
 
 alias clipboard='xclip -r -sel clip'
+alias winclip='clip.exe'
 
 alias gs="git status"
 alias unadd="restore --staged"
