@@ -32,6 +32,16 @@ local on_attach = function(client, bufnr)
   nnoremap('<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
+vim.api.nvim_create_user_command("DiagnosticToggle", function()
+	local config = vim.diagnostic.config
+	local vt = config().virtual_text
+	config {
+		virtual_text = not vt,
+		underline = not vt,
+		signs = not vt,
+	}
+end, { desc = "toggle diagnostic" })
+
 local lsp_defaults = require('lspconfig').util.default_config
 
 lsp_defaults.capabilities = vim.tbl_deep_extend(
@@ -57,10 +67,10 @@ require('lspconfig')['yamlls'].setup{
    flags = lsp_flags,
 }
 
-require('lspconfig')['groovyls'].setup{
-   on_attach = on_attach,
-   flags = lsp_flags,
-}
+-- require('lspconfig')['groovyls'].setup{
+--    on_attach = on_attach,
+--    flags = lsp_flags,
+-- }
 
 require('lspconfig')['tflint'].setup{
    on_attach = on_attach,
