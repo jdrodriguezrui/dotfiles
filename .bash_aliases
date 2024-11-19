@@ -9,6 +9,8 @@ alias kubecontext-namespace="kubectl config set-context --current --namespace >/
 alias kubecontext-clear='kubectl config unset contexts.$(kubectl config current-context 2>/dev/null).namespace >/dev/null;kubectl config unset current-context >/dev/null'
 alias kubecontexts="kubectl config get-contexts"
 alias kubecontexts-use="kubectl config use-context >/dev/null"
+
+alias kcontext="~/.dotfiles/scripts/kcontext.sh"
 export KUBE_EDITOR="nvim"
 #source <(kubectl completion bash)
 
