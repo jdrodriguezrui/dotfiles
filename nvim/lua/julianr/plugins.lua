@@ -46,7 +46,7 @@ return require('packer').startup(function(use)
    -- Scrollbar
    use("petertriho/nvim-scrollbar")
    -- hlslens (for scrollbar search results)
-   -- use {'kevinhwang91/nvim-hlslens'}
+   use {'kevinhwang91/nvim-hlslens'}
 
    -- use "EdenEast/nightfox.nvim"
    use 'morhetz/gruvbox'
