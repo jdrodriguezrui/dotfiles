@@ -24,6 +24,8 @@ alias gco="git checkout"
 alias gupstream='git branch --set-upstream-to=origin/$(git branch --show-current) $(git branch --show-current)'
 alias git-root='cd $(git rev-parse --show-toplevel)'
 export GIT_EDITOR="nvim"
+
+alias cdf='cd $(ls | gum filter)'
 #export GIT_SSL_NO_VERIFY=false
 #########
 #  AWS  #
