@@ -57,32 +57,32 @@ local lsp_flags = {
 
 require('nvim-lsp-installer').setup {}
 
-require('lspconfig').bashls.setup{
+vim.lsp.config("bashls" ,{
    on_attach = on_attach,
    flags = lsp_flags
-}
+})
 
-require('lspconfig')['yamlls'].setup{
+vim.lsp.config('yamlls', {
    on_attach = on_attach,
    flags = lsp_flags,
-}
+})
 
--- require('lspconfig')['groovyls'].setup{
+-- vim.lsp.config('groovyls', {
 --    on_attach = on_attach,
 --    flags = lsp_flags,
--- }
+-- })
 
-require('lspconfig')['tflint'].setup{
+vim.lsp.config('tflint', {
    on_attach = on_attach,
    flags = lsp_flags,
-}
+})
 
-require('lspconfig')['pyright'].setup{
+vim.lsp.config('pyright', {
    on_attach = on_attach,
    flags = lsp_flags,
-}
+})
 
-require('lspconfig')['gopls'].setup{
+vim.lsp.config('gopls', {
    on_attach = on_attach,
    flags = lsp_flags,
-}
+})
