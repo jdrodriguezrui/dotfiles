@@ -1,4 +1,4 @@
-local nnoremap = require("julianr.keymap").nnoremap
+local nnoremap = require("utils.keymap").nnoremap
 
 local opts = { noremap=true, silent=true }
 nnoremap('<space>e', vim.diagnostic.open_float, opts)

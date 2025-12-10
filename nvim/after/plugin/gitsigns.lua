@@ -1,5 +1,5 @@
-local nnoremap = require("julianr.keymap").nnoremap
-local inoremap = require("julianr.keymap").inoremap
+local nnoremap = require("utils.keymap").nnoremap
+local inoremap = require("utils.keymap").inoremap
 
 require('gitsigns').setup{
    on_attach = function(bufnr)

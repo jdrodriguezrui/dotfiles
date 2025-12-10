@@ -1,5 +1,1 @@
 require("julianr.plugins")
-require("julianr.keymap")
-require("julianr.set")
-require("julianr.remap")
-require("julianr.filetypes")
