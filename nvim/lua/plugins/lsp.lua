@@ -1,6 +1,12 @@
 return {
-   "neovim/nvim-lspconfig",
-   "williamboman/nvim-lsp-installer",
+   {
+       "mason-org/mason-lspconfig.nvim",
+       opts = {},
+       dependencies = {
+           { "mason-org/mason.nvim", opts = {} },
+           "neovim/nvim-lspconfig",
+       },
+   },
    "hrsh7th/nvim-cmp",
    "hrsh7th/cmp-buffer",
    "hrsh7th/cmp-path",

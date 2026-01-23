@@ -55,14 +55,12 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
-require('nvim-lsp-installer').setup {}
-
-vim.lsp.config("bashls" ,{
+vim.lsp.config("bash-language-server" ,{
    on_attach = on_attach,
    flags = lsp_flags
 })
 
-vim.lsp.config('yamlls', {
+vim.lsp.config('yaml-language-server', {
    on_attach = on_attach,
    flags = lsp_flags,
 })
@@ -77,7 +75,7 @@ vim.lsp.config('tflint', {
    flags = lsp_flags,
 })
 
-vim.lsp.config('pyright', {
+vim.lsp.config('basedpyright', {
    on_attach = on_attach,
    flags = lsp_flags,
 })
