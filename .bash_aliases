@@ -11,6 +11,7 @@ alias kubecontexts="kubectl config get-contexts"
 alias kubecontexts-use="kubectl config use-context >/dev/null"
 
 alias kcontext="~/.dotfiles/scripts/kcontext.sh"
+alias kube-getsecret="~/.dotfiles/scripts/kube-getsecret.sh"
 export KUBE_EDITOR="nvim"
 #source <(kubectl completion bash)
 
